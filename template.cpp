@@ -1,19 +1,19 @@
 using namespace std;
 #include<iostream>
 
-template <class t>
+template <class t, class v>
 class funtemp
 {
 	public:
-	t add(t a, t b)
+	v add(t a, v b)
 {
 	return(a+b);
 }
 };
 main()
 {
-	funtemp<int> *p=new funtemp<int>();
+	funtemp<int,float> *p=new funtemp<int, float>();
 
-	cout<<p->add(4,5);
+	cout<<p->add(4,5.9);
 	
 }
